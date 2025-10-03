@@ -1,0 +1,32 @@
+[gd_resource type="SpriteFrames" load_steps=5 format=3 uid="uid://doltkxicw4m2o"]
+
+[ext_resource type="Texture2D" uid="uid://dmm4fj3tlgf4o" path="res://asset/boss/Dead/animation/Fire.png" id="1_3drio"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vf0vs"]
+atlas = ExtResource("1_3drio")
+region = Rect2(0, 0, 16, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v40rg"]
+atlas = ExtResource("1_3drio")
+region = Rect2(16, 0, 16, 28)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nqexo"]
+atlas = ExtResource("1_3drio")
+region = Rect2(32, 0, 16, 28)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vf0vs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v40rg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nqexo")
+}],
+"loop": true,
+"name": &"fire_dead_attack",
+"speed": 5.0
+}]

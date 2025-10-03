@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=41 format=3 uid="uid://bq7xeyniwcdko"]
+[gd_resource type="SpriteFrames" load_steps=41 format=3 uid="uid://bcxy0spr642xn"]
 
 [ext_resource type="Texture2D" uid="uid://ddwtchgagtc8f" path="res://asset/player/Soldier/Soldier/Soldier-Attack01.png" id="1_yuf1h"]
 [ext_resource type="Texture2D" uid="uid://bn6tsh6cddkr0" path="res://asset/player/Soldier/Soldier/Soldier-Attack02.png" id="2_08n1n"]
@@ -164,9 +164,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_rme2b")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack1_player",
-"speed": 5.0
+"speed": 8.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -187,9 +187,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_jbu6c")
 }],
-"loop": true,
+"loop": false,
 "name": &"attack2_player",
-"speed": 5.0
+"speed": 7.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -204,9 +204,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8sxq7")
 }],
-"loop": true,
+"loop": false,
 "name": &"death_player",
-"speed": 5.0
+"speed": 2.5
 }, {
 "frames": [{
 "duration": 1.0,
@@ -221,7 +221,7 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qhmw3")
 }],
-"loop": true,
+"loop": false,
 "name": &"hurt_player",
 "speed": 5.0
 }, {
@@ -275,5 +275,5 @@ animations = [{
 }],
 "loop": true,
 "name": &"walk_player",
-"speed": 5.0
+"speed": 7.0
 }]

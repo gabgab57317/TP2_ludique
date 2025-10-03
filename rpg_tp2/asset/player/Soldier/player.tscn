@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3 uid="uid://burpmeruag72d"]
+
+[ext_resource type="SpriteFrames" uid="uid://bcxy0spr642xn" path="res://asset/player/Soldier/animation/animation_player.tres" id="1_1edji"]
+[ext_resource type="Script" uid="uid://dhmv6la6owe1r" path="res://asset/player/Soldier/player.gd" id="1_wxr5h"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1edji"]
+radius = 8.8
+height = 26.8
+
+[node name="player" type="Area2D"]
+scale = Vector2(5, 5)
+script = ExtResource("1_wxr5h")
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+rotation = 0.00151547
+sprite_frames = ExtResource("1_1edji")
+animation = &"hurt_player"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3.6, -1)
+rotation = -1.5708
+shape = SubResource("CapsuleShape2D_1edji")
