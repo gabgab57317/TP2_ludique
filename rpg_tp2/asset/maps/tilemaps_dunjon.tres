@@ -1,6 +1,8 @@
-[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://c18rawhbytml6"]
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://c18rawhbytml6"]
 
 [ext_resource type="Texture2D" uid="uid://ct8dfnnidm76m" path="res://asset/maps/Dungeon_Tileset.png" id="1_8jk0f"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_8jk0f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ar3ac"]
 texture = ExtResource("1_8jk0f")
@@ -106,4 +108,7 @@ texture = ExtResource("1_8jk0f")
 9:9/0 = 0
 
 [resource]
+physics_layer_0/collision_layer = 255
+physics_layer_0/collision_mask = 255
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_8jk0f")
 sources/0 = SubResource("TileSetAtlasSource_ar3ac")
